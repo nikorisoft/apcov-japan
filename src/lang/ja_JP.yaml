@@ -1,0 +1,68 @@
+region:
+  Hokkaido: 北海道
+  Tohoku: 東北
+  Kanto: 関東
+  Chubu: 中部
+  Kinki: 近畿
+  Chugoku: 中国
+  Shikoku: 四国
+  Kyushu: 九州
+  Okinawa: 沖縄
+types:
+  hub: 拠点空港
+  regional: 地方管理空港
+  other: その他の空港
+  joint-use: 共用空港
+messages:
+  airport-coverage: 空港経験値 (日本)
+
+  no-scheduled-flights: 定期旅客便なし
+  runway: 滑走路
+  departed: 出発
+  arrived: 到着
+  visited: 訪問
+  taken-off: 離陸
+  landed: 着陸
+  used: 利用した
+
+  data-management: データの管理
+  download-json: JSONとしてデータをダウンロード
+  upload-json: 保存したJSONの読み込み
+  initialize-data: データを初期化する
+  warning-overwrites-data: "注意: 現在のデータは失われます!"
+  dialog-title-initialize-data: データの初期化
+  dialog-message-confirm-initialization: データを初期化してよろしいですか?
+  dialog-cancel: キャンセル
+  dialog-initialize-data-confirm: はい、データを初期化します
+
+  init-message: 空港経験値の初期設定
+  init-message-ask-level: 最初に経験値の詳細レベルを設定してください。
+  init-message-level-1: レベル1 - それぞれの空港を使ったことがあるかどうかのみ記録します
+  init-message-level-2: レベル2 - それぞれの空港から出発・到着したことがあるかを記録します
+  init-message-level-3: レベル3 - それぞれの空港のどの滑走路から離陸・着陸したことがあるかを記録します
+  init-message-note: なお、一度レベルを設定すると後で変更することはできません。変更するにはデータをクリアする必要があります。
+  init-confirm: 決定して開始する
+
+  score-title: スコアの詳細
+  score-overall: 総合スコア
+  score-by-region: 地域ごとのスコア
+  score-by-type: 空港種別ごとのスコア
+
+  table-level: レベル
+  table-score: スコア
+  table-region: 地域
+  table-type: 空港の種類
+  table-score-level-1: スコア(レベル1)
+  table-score-level-2: スコア(レベル2)
+  table-score-level-3: スコア(レベル3)
+
+  table-airport-name: 空港名
+  record: 記録
+
+  nav-map: 地図入力
+  nav-table: 表入力
+  nav-score: スコア詳細
+  nav-data: データ管理
+
+  IATA: IATA
+  ICAO: ICAO

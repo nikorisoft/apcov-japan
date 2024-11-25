@@ -1,0 +1,7 @@
+@import url("uikit/src/less/uikit.theme.less");
+
+@import url("maplibre-gl/dist/maplibre-gl.css");
+
+body {
+  font-family: "Yu Gothic UI", sans-serif;
+}

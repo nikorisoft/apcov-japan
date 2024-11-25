@@ -1,0 +1,67 @@
+region:
+  Hokkaido: Hokkaido
+  Tohoku: Tohoku
+  Kanto: Kanto
+  Chubu: Chubu
+  Kinki: Kinki
+  Chugoku: Chugoku
+  Shikoku: Shikoku
+  Kyushu: Kyushu
+  Okinawa: Okinawa
+types:
+  hub: Hub
+  regional: Regional
+  other: Other
+  joint-use: Joint use
+messages:
+  airport-coverage: Airport Coverage in Japan
+
+  no-scheduled-flights: No commercial flights
+  runway: Runway
+  used: Used
+  departed: Departed
+  arrived: Arrived
+  taken-off: Taken off
+  landed: Landed
+  visited: Visited
+  data-management: Manage Data
+  download-json: Download as JSON
+  upload-json: Load JSON
+  initialize-data: Initialize data
+  warning-overwrites-data: "Warning: Current data will be lost!"
+  dialog-title-initialize-data: Initialize data
+  dialog-message-confirm-initialization: Are you sure to initialize data?
+  dialog-cancel: Cancel
+  dialog-initialize-data-confirm: Yes, delete my data!
+
+  init-message: "Welcome to Airport Coverage!"
+  init-message-ask-level: To start, please select the level of the score you desire.
+  init-message-level-1: Level 1 - Record only if you have used each airport
+  init-message-level-2: Level 2 - Record if you have departed from or arrived at each airport
+  init-message-level-3: Level 3 - Record if you have taken off from or landed on each runway of every airport
+  init-message-note: Please note that you cannot change the level after this screen unless you clear your data.
+  init-confirm: Confirm and Start
+
+  score-title: "Score Details"
+  score-overall: "Overall Score"
+  score-by-region: "Score by Region"
+  score-by-type: "Score by Airport Type"
+
+  table-level: "Level"
+  table-score: "Score"
+  table-region: "Region"
+  table-type: "Airport Type"
+  table-score-level-1: "Score (Level 1)"
+  table-score-level-2: "Score (Level 2)"
+  table-score-level-3: "Score (Level 3)"
+
+  table-airport-name: Airport Name
+  record: Record
+
+  nav-map: Map
+  nav-table: Table
+  nav-score: Score
+  nav-data: Data
+
+  IATA: IATA
+  ICAO: ICAO

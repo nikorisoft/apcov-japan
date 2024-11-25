@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="36px"
+   viewBox="0 -960 960 960"
+   width="36px"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="airport-excluded.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="56.71875"
+     inkscape:cx="16"
+     inkscape:cy="16"
+     inkscape:window-width="1352"
+     inkscape:window-height="1240"
+     inkscape:window-x="2383"
+     inkscape:window-y="525"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m272-271-118-66 30-30 99 14 177-177-320-175 41-41 393 102 118-119q15-15 35.5-15t35.5 15q15 15 15 35.5T763-692L645-573l102 393-41 41-175-320-177 177 14 99-30 30-66-118Z"
+     id="path1"
+     stroke="#fa4032" stroke-width="24"
+     style="fill:#fef3e2" />
+</svg>

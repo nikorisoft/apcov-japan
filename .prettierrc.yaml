@@ -1,0 +1,13 @@
+semi: true
+tabWidth: 4
+singleQuote: false
+printWidth: 120
+plugins:
+  - "@trivago/prettier-plugin-sort-imports"
+overrides:
+  - files:
+      - "*.json"
+      - "*.yaml"
+      - "*.yml"
+    options:
+      tabWidth: 2

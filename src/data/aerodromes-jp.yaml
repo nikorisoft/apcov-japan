@@ -1,0 +1,1352 @@
+categories:
+  types:
+    - hub
+    - regional
+    - joint-use
+    - other
+  scheduled:
+    - yes
+    - no
+  region:
+    - Hokkaido
+    - Tohoku
+    - Kanto
+    - Chubu
+    - Kinki
+    - Chugoku
+    - Shikoku
+    - Kyushu
+    - Okinawa
+aerodromes:
+  RORA:
+    name: Aguni
+    native: 粟国空港
+    IATA: AGJ
+    coordinates:
+      - 263534N
+      - 1271425E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJSK:
+    name: Akita
+    native: 秋田空港
+    IATA: AXT
+    coordinates:
+      - 393656N
+      - 1401307E
+    runways:
+      - "10"
+      - "28"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Tohoku
+  RJDA:
+    name: Amakusa
+    native: 天草飛行場
+    IATA: AXJ
+    coordinates:
+      - 322856N
+      - 1300932E
+    runways:
+      - "13"
+      - "31"
+    categories:
+      types: other
+      scheduled: yes
+      region: Kyushu
+  RJKA:
+    name: Amami
+    native: 奄美空港
+    IATA: ASJ
+    coordinates:
+      - 282551N
+      - 1294245E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJSA:
+    name: Aomori
+    native: 青森空港
+    IATA: AOJ
+    coordinates:
+      - 404400N
+      - 1404119E
+    runways:
+      - "06"
+      - "24"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Tohoku
+  RJEC:
+    name: Asahikawa
+    native: 旭川空港
+    IATA: AKJ
+    coordinates:
+      - 434015N
+      - 1422651E
+    runways:
+      - "16"
+      - "34"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  RJTF:
+    name: Chofu
+    native: 調布飛行場
+    coordinates:
+      - 354018N
+      - 1393141E
+    runways:
+      - "17"
+      - "35"
+    categories:
+      types: other
+      scheduled: yes
+      region: Kanto
+  RJGG:
+    name: Chubu Centrair INTL
+    native: 中部国際空港
+    IATA: NGO
+    coordinates:
+      - 345130N
+      - 1364819E
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Chubu
+  RJFE:
+    name: Fukue
+    native: 福江空港
+    IATA: FUJ
+    coordinates:
+      - 323959N
+      - 1284958E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJNF:
+    name: Fukui
+    native: 福井空港
+    IATA: FKJ
+    coordinates:
+      - 360834N
+      - 1361326E
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: regional
+      scheduled: no
+      region: Chubu
+  RJFF:
+    name: Fukuoka
+    native: 福岡空港
+    IATA: FUK
+    coordinates:
+      - 333504N
+      - 1302706E
+    runways:
+      - "16"
+      - "34"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kyushu
+  RJSF:
+    name: Fukushima
+    native: 福島空港
+    IATA: FKS
+    coordinates:
+      - 371339N
+      - 1402541E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Tohoku
+  RJTH:
+    name: Hachijojima
+    native: 八丈島空港
+    IATA: HAC
+    coordinates:
+      - 330654N
+      - 1394709E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kanto
+  RJCH:
+    name: Hakodate
+    native: 函館空港
+    IATA: HKD
+    coordinates:
+      - 414612N
+      - 1404919E
+    runways:
+      - "12"
+      - "30"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  RJSI:
+    name: Hanamaki
+    native: 花巻空港
+    IATA: HNA
+    coordinates:
+      - 392543N
+      - 1410807E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Tohoku
+  RORH:
+    name: Hateruma
+    native: 波照間空港
+    IATA: HTR
+    coordinates:
+      - 240330N
+      - 1234814E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJAH:
+    name: Hyakuri
+    native: 百里飛行場
+    IATA: IBR
+    coordinates:
+      - 361054N
+      - 1402453E
+    runways:
+      - "03L"
+      - "21R"
+      - "03R"
+      - "21L"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Kanto
+  RORE:
+    name: Iejima
+    native: 伊江島空港
+    IATA: IEJ
+    coordinates:
+      - 264321N
+      - 1274713E
+    runways:
+      - "04"
+      - "22"
+    categories:
+      types: regional
+      scheduled: no
+      region: Okinawa
+  RJDB:
+    name: Iki
+    native: 壱岐空港
+    IATA: IKI
+    coordinates:
+      - 334457N
+      - 1294709E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJOI:
+    name: Iwakuni
+    native: 岩国飛行場
+    IATA: IWK
+    coordinates:
+      - 340842N
+      - 1321449E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Chugoku
+  RJOW:
+    name: Iwami
+    native: 石見空港
+    IATA: IWJ
+    coordinates:
+      - 344035N
+      - 1314725E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJOC:
+    name: Izumo
+    native: 出雲空港
+    IATA: IZO
+    coordinates:
+      - 352449N
+      - 1325324E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJFK:
+    name: Kagoshima
+    native: 鹿児島空港
+    IATA: KOJ
+    coordinates:
+      - 314812N
+      - 1304310E
+    runways:
+      - "16"
+      - "34"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kyushu
+  RJDK:
+    name: Kamigoto
+    native: 上五島空港
+    coordinates:
+      - 330049N
+      - 1291133E
+    runways:
+      - "17"
+      - "35"
+    categories:
+      types: regional
+      scheduled: no
+      region: Kyushu
+  RJBB:
+    name: Kansai INTL
+    native: 関西国際空港
+    IATA: KIX
+    coordinates:
+      - 342603N
+      - 1351358E
+    runways:
+      - "06R"
+      - "24L"
+      - "06L"
+      - "24R"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kinki
+  ROKR:
+    name: Kerama
+    native: 慶良間空港
+    IATA: KJP
+    coordinates:
+      - 261006N
+      - 1271736E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: no
+      region: Okinawa
+  RJKI:
+    name: Kikai
+    native: 喜界空港
+    IATA: KKX
+    coordinates:
+      - 281917N
+      - 1295541E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RORK:
+    name: Kitadaito
+    native: 北大東空港
+    IATA: KTD
+    coordinates:
+      - 255641N
+      - 1311937E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJFR:
+    name: Kitakyushu
+    native: 北九州空港
+    IATA: KKJ
+    coordinates:
+      - 335044N
+      - 1310206E
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kyushu
+  RJBE:
+    name: Kobe
+    native: 神戸空港
+    IATA: UKB
+    coordinates:
+      - 343758N
+      - 1351326E
+    runways:
+      - "09"
+      - "27"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kinki
+  RJOK:
+    name: Kochi
+    native: 高知空港
+    IATA: KCZ
+    coordinates:
+      - 333246N
+      - 1334010E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Shikoku
+  RJBK:
+    name: Kohnan
+    native: 岡南飛行場
+    coordinates:
+      - 343529N
+      - 1335600E
+    runways:
+      - "09"
+      - "27"
+    categories:
+      types: other
+      scheduled: no
+      region: Chugoku
+  RJNK:
+    name: Komatsu
+    native: 小松飛行場
+    IATA: KMQ
+    coordinates:
+      - 362338N
+      - 1362427E
+    runways:
+      - "06"
+      - "24"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Chubu
+  RJAZ:
+    name: Kozushima
+    native: 神津島空港
+    coordinates:
+      - 341122N
+      - 1390801E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kanto
+  RJFT:
+    name: Kumamoto
+    native: 熊本空港
+    IATA: KMJ
+    coordinates:
+      - 325014N
+      - 1305119E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kyushu
+  ROKJ:
+    name: Kumejima
+    native: 久米島空港
+    IATA: UEO
+    coordinates:
+      - 262149N
+      - 1264250E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJCK:
+    name: Kushiro
+    native: 釧路空港
+    IATA: KUH
+    coordinates:
+      - 430227N
+      - 1441135E
+    runways:
+      - "17"
+      - "35"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  RJAF:
+    name: Matsumoto
+    native: 松本空港
+    IATA: MMJ
+    coordinates:
+      - 361000N
+      - 1375522E
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chubu
+  RJOM:
+    name: Matsuyama
+    native: 松山空港
+    IATA: MYJ
+    coordinates:
+      - 334938N
+      - 1324159E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Shikoku
+  RJCM:
+    name: Memanbetsu
+    native: 女満別空港
+    IATA: MMB
+    coordinates:
+      - "435250N"
+      - "1440951E"
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Hokkaido
+  RJOH:
+    name: Miho
+    native: 美保飛行場
+    IATA: YGJ
+    coordinates:
+      - "352936N"
+      - "1331421E"
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Chugoku
+  ROMD:
+    name: Minamidaito
+    native: 南大東空港
+    IATA: MMD
+    coordinates:
+      - 255048N
+      - 1311549E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJSM:
+    name: Misawa
+    native: 三沢飛行場
+    IATA: MSJ
+    coordinates:
+      - 404211N
+      - 1412206E
+    runways:
+      - "10"
+      - "28"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Tohoku
+  RJTQ:
+    name: Miyakejima
+    native: 三宅島空港
+    IATA: MYE
+    coordinates:
+      - 340425N
+      - 1393337E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kanto
+  ROMY:
+    name: Miyako
+    native: 宮古空港
+    IATA: MMY
+    coordinates:
+      - 244658N
+      - 1251742E
+    runways:
+      - "04"
+      - "22"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJFM:
+    name: Miyazaki
+    native: 宮崎空港
+    IATA: KMI
+    coordinates:
+      - 315238N
+      - 1312655E
+    runways:
+      - "09"
+      - "27"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJEB:
+    name: Monbetsu
+    native: 紋別空港
+    IATA: MBE
+    coordinates:
+      - 441815N
+      - 1432415E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Hokkaido
+  RJFU:
+    name: Nagasaki
+    native: 長崎空港
+    IATA: NGS
+    coordinates:
+      - 325501N
+      - 1295449E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJNA:
+    name: Nagoya
+    native: 名古屋飛行場
+    IATA: NKM
+    coordinates:
+      - 351518N
+      - 1365528E
+    runways:
+      - "16"
+      - "34"
+    categories:
+      types: other
+      scheduled: yes
+      region: Chubu
+  ROAH:
+    name: Naha
+    native: 那覇空港
+    IATA: OKA
+    coordinates:
+      - 261136N
+      - 1273823E
+    runways:
+      - "18L"
+      - "36R"
+      - "18R"
+      - "36L"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Okinawa
+  RJCN:
+    name: Nakashibetsu
+    native: 中標津空港
+    IATA: SHB
+    coordinates:
+      - 433439N
+      - 1445736E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Hokkaido
+  RJBD:
+    name: Nanki Shirahama
+    native: 南紀白浜空港
+    IATA: SHM
+    coordinates:
+      - 333944N
+      - 1352152E
+    runways:
+      - "15"
+      - "33"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kinki
+  RJAA:
+    name: Narita INTL
+    native: 成田国際空港
+    IATA: NRT
+    coordinates:
+      - 354555N
+      - 1402308E
+    runways:
+      - 16R
+      - 34L
+      - 16L
+      - 34R
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kanto
+  RJCC:
+    name: Shin Chitose
+    native: 新千歳空港
+    IATA: CTS
+    coordinates:
+      - 424631N
+      - 1414133E
+    runways:
+      - "01L"
+      - "19R"
+      - "01R"
+      - "19L"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  ROIG:
+    name: New Ishigaki
+    native: 新石垣空港
+    IATA: ISG
+    coordinates:
+      - 242347N
+      - 1241442E
+    runways:
+      - "04"
+      - "22"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJSN:
+    name: Niigata
+    native: 新潟空港
+    IATA: KIJ
+    coordinates:
+      - 375721N
+      - 1390642E
+    runways:
+      - "04"
+      - "22"
+      - "10"
+      - "28"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chubu
+  RJAN:
+    name: Niijima
+    native: 新島空港
+    coordinates:
+      - 342210N
+      - 1391607E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kanto
+  RJNW:
+    name: Noto
+    native: 能登空港
+    IATA: NTQ
+    coordinates:
+      - 371736N
+      - 1365744E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chubu
+  RJCB:
+    name: Obihiro
+    native: 帯広空港
+    IATA: OBO
+    coordinates:
+      - 424400N
+      - 1431302E
+    runways:
+      - "17"
+      - "35"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  RJSR:
+    name: Odate-Noshiro
+    native: 大館能代空港
+    IATA: ONJ
+    coordinates:
+      - 401131N
+      - 1402218E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Tohoku
+  RJFO:
+    name: Oita
+    native: 大分空港
+    IATA: OIT
+    coordinates:
+      - 332846N
+      - 1314414E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kyushu
+  RJDO:
+    name: Ojika
+    native: 小値賀空港
+    coordinates:
+      - 331127N
+      - 1290525E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: no
+      region: Kyushu
+  RJOB:
+    name: Okayama
+    native: 岡山空港
+    IATA: OKJ
+    coordinates:
+      - 344525N
+      - 1335119E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJNO:
+    name: Oki
+    native: 隠岐空港
+    IATA: OKI
+    coordinates:
+      - 361042N
+      - 1331924E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJKB:
+    name: Okierabu
+    native: 沖永良部空港
+    coordinates:
+      - 272554N
+      - 1284220E
+    runways:
+      - "04"
+      - "22"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJEO:
+    name: Okushiri
+    native: 奥尻空港
+    IATA: OIR
+    coordinates:
+      - 420418N
+      - 1392558E
+    runways:
+      - "13"
+      - "31"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Hokkaido
+  RJOO:
+    name: Osaka INTL
+    native: 大阪国際空港
+    IATA: ITM
+    coordinates:
+      - 344704N
+      - 1352621E
+    runways:
+      - "14R"
+      - "32L"
+      - "14L"
+      - "32R"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kinki
+  RJTO:
+    name: Oshima
+    native: 大島空港
+    IATA: OIM
+    coordinates:
+      - 344655N
+      - 1392137E
+    runways:
+      - "03"
+      - "21"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kanto
+  RJCR:
+    name: Rebun
+    native: 礼文空港
+    IATA: RBJ
+    coordinates:
+      - 452718N
+      - 1410221E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: no
+      region: Hokkaido
+  RJER:
+    name: Rishiri
+    native: 利尻空港
+    IATA: RIS
+    coordinates:
+      - 451431N
+      - 1411115E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Hokkaido
+  RJSD:
+    name: Sado
+    native: 佐渡空港
+    IATA: SDS
+    coordinates:
+      - 380340N
+      - 1382451E
+    runways:
+      - "10"
+      - "28"
+    categories:
+      types: regional
+      scheduled: no
+      region: Chubu
+  RJFS:
+    name: Saga
+    native: 佐賀空港
+    IATA: HSG
+    coordinates:
+      - 330859N
+      - 1301808E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJCO:
+    name: Sapporo
+    native: 札幌飛行場
+    IATA: OKD
+    coordinates:
+      - 430703N
+      - 1412253E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Hokkaido
+  RJSS:
+    name: Sendai
+    native: 仙台空港
+    IATA: SDJ
+    coordinates:
+      - 380823N
+      - 1405501E
+    runways:
+      - "09"
+      - "27"
+      - "12"
+      - "30"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Tohoku
+  RORS:
+    name: Shimojishima
+    native: 下地島空港
+    IATA: SHI
+    coordinates:
+      - 244936N
+      - 1250841E
+    runways:
+      - "35"
+      - "17"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJNS:
+    name: Shizuoka
+    native: 静岡空港
+    IATA: FSZ
+    coordinates:
+      - 344746N
+      - 1381122E
+    runways:
+      - "12"
+      - "30"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chubu
+  RJSY:
+    name: Shonai
+    native: 庄内空港
+    IATA: SYO
+    coordinates:
+      - 384844N
+      - 1394714E
+    runways:
+      - "09"
+      - "27"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Tohoku
+  RJBT:
+    name: Tajima
+    native: 但馬飛行場
+    IATA: TJH
+    coordinates:
+      - 353046N
+      - 1344713E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: other
+      scheduled: yes
+      region: Kinki
+  RJOT:
+    name: Takamatsu
+    native: 高松空港
+    IATA: TAK
+    coordinates:
+      - 341251N
+      - 1340056E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Shikoku
+  RJFG:
+    name: Tanegashima
+    native: 種子島空港
+    IATA: TNE
+    coordinates:
+      - 303618N
+      - 1305930E
+    runways:
+      - "13"
+      - "31"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RORT:
+    name: Tarama
+    native: 多良間空港
+    IATA: TRA
+    coordinates:
+      - 243914N
+      - 1244031E
+    runways:
+      - "18"
+      - "36"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RJKN:
+    name: Tokunoshima
+    native: 徳之島空港
+    IATA: TKN
+    coordinates:
+      - 275011N
+      - 1285253E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJOS:
+    name: Tokushima
+    native: 徳島飛行場
+    IATA: TKS
+    coordinates:
+      - 340756N
+      - 1343633E
+    runways:
+      - "11"
+      - "29"
+    categories:
+      types: joint-use
+      scheduled: yes
+      region: Shikoku
+  RJTT:
+    name: Tokyo INTL
+    native: 東京国際空港
+    IATA: HND
+    coordinates:
+      - 353312N
+      - 1394652E
+    runways:
+      - "16L"
+      - "34R"
+      - "16R"
+      - "34L"
+      - "04"
+      - "22"
+      - "05"
+      - "23"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Kanto
+  RJOR:
+    name: Tottori
+    native: 鳥取空港
+    IATA: TTJ
+    coordinates:
+      - 353148N
+      - 1340954E
+    runways:
+      - "10"
+      - "28"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJNT:
+    name: Toyama
+    native: 富山空港
+    IATA: TOY
+    coordinates:
+      - 363854N
+      - 1371115E
+    runways:
+      - "02"
+      - "20"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chubu
+  RJDT:
+    name: Tsushima
+    native: 対馬空港
+    IATA: TSJ
+    coordinates:
+      - 341706N
+      - 1291950E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJCW:
+    name: Wakkanai
+    native: 稚内空港
+    IATA: WKJ
+    coordinates:
+      - 452416N
+      - 1414808E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Hokkaido
+  RJFC:
+    name: Yakushima
+    native: 屋久島空港
+    IATA: KUM
+    coordinates:
+      - 302308N
+      - 1303933E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
+  RJSC:
+    name: Yamagata
+    native: 山形空港
+    IATA: GAJ
+    coordinates:
+      - 382443N
+      - 1402216E
+    runways:
+      - "01"
+      - "19"
+    categories:
+      types: hub
+      scheduled: yes
+      region: Tohoku
+  RJDC:
+    name: Yamaguchi-Ube
+    native: 山口宇部空港
+    IATA: UBJ
+    coordinates:
+      - 335548N
+      - 1311643E
+    runways:
+      - "07"
+      - "25"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Chugoku
+  RJOY:
+    name: Yao
+    native: 八尾空港
+    coordinates:
+      - 343548N
+      - 1353602E
+    runways:
+      - "09"
+      - "27"
+      - "13"
+      - "31"
+    categories:
+      types: other
+      scheduled: no
+      region: Kinki
+  ROYN:
+    name: Yonaguni
+    native: 与那国空港
+    IATA: OGN
+    coordinates:
+      - 242803N
+      - 1225847E
+    runways:
+      - "08"
+      - "26"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Okinawa
+  RORY:
+    name: Yoron
+    native: 与論空港
+    IATA: RNJ
+    coordinates:
+      - 270238N
+      - 1282406E
+    runways:
+      - "14"
+      - "32"
+    categories:
+      types: regional
+      scheduled: yes
+      region: Kyushu
