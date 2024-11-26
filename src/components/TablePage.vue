@@ -10,7 +10,7 @@
                 th {{ i18n.messages("record") }}
         tbody
             tr(v-for="r in rows")
-                th(v-if="r.header", colspan="5") {{ r.name }}
+                th(v-if="r.header", colspan="5") {{ categoryName(r.value) }}
                 td(v-if="!r.header && r.firstLine", :rowspan="r.rowSpan") {{ i18n.aerodrome(r.a) }}
                 td(v-if="!r.header && r.firstLine", :rowspan="r.rowSpan") {{ iata(r.a) }}
                 td(v-if="!r.header && r.firstLine", :rowspan="r.rowSpan") {{ r.a.code }}
@@ -43,7 +43,6 @@ import { onMounted, ref } from "vue";
 
 interface AerodromesByCategory {
     value: string;
-    name: string;
     rows: AerodromeRow[];
 }
 
@@ -51,7 +50,6 @@ type AerodromeRow =
     | {
           header: true;
           value: string;
-          name: string;
       }
     | {
           header: false;
@@ -67,6 +65,10 @@ const rows = ref<AerodromeRow[]>([]);
 
 function iata(a: Aerodrome) {
     return a.IATA == null ? "---" : a.IATA;
+}
+
+function categoryName(v: string) {
+    return i18n.region(v);
 }
 
 onMounted(() => {
@@ -85,7 +87,6 @@ onMounted(() => {
     const categories: AerodromesByCategory[] = [];
     for (const r of RegionOrder) {
         const category: AerodromesByCategory = {
-            name: i18n.region(r),
             value: r,
             rows: [],
         };
@@ -124,7 +125,6 @@ onMounted(() => {
         rows.value.push({
             header: true,
             value: c.value,
-            name: c.name,
         });
         rows.value.push(...c.rows);
     }
@@ -135,6 +135,7 @@ onMounted(() => {
 
 <style lang="css">
 table.table-page tbody th {
-    background-color: #f0f0f0;
+    background-color: #707070;
+    color: #e0e0e0;
 }
 </style>
