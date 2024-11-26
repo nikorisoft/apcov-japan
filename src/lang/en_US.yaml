@@ -24,6 +24,8 @@ messages:
   taken-off: Taken off
   landed: Landed
   visited: Visited
+  level: Level
+
   data-management: Manage Data
   download-json: Download as JSON
   upload-json: Load JSON
@@ -65,3 +67,5 @@ messages:
 
   IATA: IATA
   ICAO: ICAO
+
+  point-unit: pt

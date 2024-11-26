@@ -24,11 +24,13 @@ messages:
   taken-off: Décollé
   landed: Atterri
   visited: Visité
+  level: Niveau
+
   data-management: Gestion des données
   download-json: Télécharger en JSON
   upload-json: Charger JSON
   initialize-data: Initialiser les données
-  warning-overwrites-data: "Attention: Les données actuelles seront perdues !"
+  warning-overwrites-data: "Attention : Les données actuelles seront perdues !"
   dialog-title-initialize-data: Initialiser les données
   dialog-message-confirm-initialization: Êtes-vous sûr de vouloir initialiser les données ?
   dialog-cancel: Annuler
@@ -65,3 +67,5 @@ messages:
 
   IATA: IATA
   ICAO: OACI
+
+  point-unit: pt

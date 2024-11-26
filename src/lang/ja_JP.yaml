@@ -24,6 +24,7 @@ messages:
   taken-off: 離陸
   landed: 着陸
   used: 利用した
+  level: レベル
 
   data-management: データの管理
   download-json: JSONとしてデータをダウンロード
@@ -66,3 +67,5 @@ messages:
 
   IATA: IATA
   ICAO: ICAO
+
+  point-unit: 点

@@ -20,9 +20,9 @@
           option(v-for="l in i18n.LanguageOptions", :value="l.value") {{ l.name }}
       .score(v-if="score.initialized")
         span.point {{ point }}
-        | pt / 
+        | {{ i18n.messages("point-unit") }} / 
         span.point {{ totalPoint }}
-        | pt
+        | {{ i18n.messages("point-unit") }}
 
   .uk-flex-1
     router-view

@@ -11,12 +11,12 @@
                     th {{ i18n.messages("table-score") }}
             tbody
                 tr(v-for="l in scoresByLevel")
-                    td Level {{l.level}}
+                    td {{ i18n.messages("level") }} {{l.level}}
                     td
                         span.point {{l.point}}
-                        | pt / 
+                        | {{ i18n.messages("point-unit") }} / 
                         span.point {{l.max}}
-                        | pt
+                        | {{ i18n.messages("point-unit") }}
 
     h2 {{ i18n.messages("score-by-region") }}
     .uk-width-xlarge
@@ -32,9 +32,9 @@
                     td {{ i18n.region(r.region) }}
                     td(v-for="l in r.score")
                         span.point {{l.point}}
-                        | pt / 
+                        | {{ i18n.messages("point-unit") }} / 
                         span.point {{l.max}}
-                        | pt
+                        | {{ i18n.messages("point-unit") }}
 
 
     h2 {{ i18n.messages("score-by-type") }}
@@ -51,9 +51,9 @@
                     td {{ i18n.types(t.typeName) }}
                     td(v-for="l in t.score")
                         span.point {{l.point}}
-                        | pt / 
+                        | {{ i18n.messages("point-unit") }} / 
                         span.point {{l.max}}
-                        | pt
+                        | {{ i18n.messages("point-unit") }}
 </template>
 
 <script setup lang="ts">
