@@ -57,6 +57,14 @@ messages:
   table-score-level-2: スコア(レベル2)
   table-score-level-3: スコア(レベル3)
 
+  table-category-region: 地域
+  table-category-type: 空港の種類
+  table-category-name-alphabet: 空港名 (アルファベット順)
+  table-category-name-japanese: 空港名 (よみがな順)
+  table-category-iata: IATAコード
+  table-category-icao: ICAOコード
+  table-category-sorted-by: "ソート順: "
+
   table-airport-name: 空港名
   record: 記録
 

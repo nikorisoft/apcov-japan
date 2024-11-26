@@ -57,6 +57,14 @@ messages:
   table-score-level-2: "Score (Niveau 2)"
   table-score-level-3: "Score (Niveau 3)"
 
+  table-category-region: Région
+  table-category-type: Type d’aéroport
+  table-category-name-alphabet: Nom de l'aéroport (alphabétique)
+  table-category-name-japanese: Nom de l'aéroport (japonais)
+  table-category-iata: Code IATA
+  table-category-icao: Code OACI
+  table-category-sorted-by: Trier par
+
   table-airport-name: Nom de l'aéroport
   record: Enregistrer
 

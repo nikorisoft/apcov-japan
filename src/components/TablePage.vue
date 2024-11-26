@@ -1,5 +1,10 @@
 <template lang="pug">
 .table-page.uk-flex-1.uk-overflow-auto
+    .uk-flex.uk-flex-middle
+        .title.uk-margin-right {{ i18n.messages("table-category-sorted-by") }}
+        select.uk-select.uk-form-small.uk-form-width-medium(v-model="currentSort")
+            option(v-for="c in sortCategories", :value="c.value") {{ c.name }}
+
     table.uk-table.uk-table-divider.uk-table-small.uk-table-hover.uk-table-middle.table-page
         thead
             tr
@@ -36,10 +41,10 @@
 </template>
 
 <script lang="ts" setup>
-import { RegionOrder, type Aerodrome } from "../data/aerodromes";
+import { RegionOrder, TypeOrder, type Aerodrome } from "../data/aerodromes";
 import { useScore } from "../data/scores";
 import * as i18n from "../i18n";
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 
 interface AerodromesByCategory {
     value: string;
@@ -61,41 +66,129 @@ type AerodromeRow =
 
 const score = useScore();
 const aerodromesSorted = ref<Aerodrome[]>([...score.aerodromes]);
-const rows = ref<AerodromeRow[]>([]);
+//const rows = ref<AerodromeRow[]>([]);
 
 function iata(a: Aerodrome) {
     return a.IATA == null ? "---" : a.IATA;
 }
 
+type TableSortCategory = "region" | "type" | "IATA" | "ICAO";
+const currentSort = ref<TableSortCategory>("region");
+
+const sortCategories = computed<{ value: string; name: string }[]>(() => {
+    return [
+        { value: "region", name: i18n.messages("table-category-region") },
+        { value: "type", name: i18n.messages("table-category-type") },
+        { value: "IATA", name: i18n.messages("table-category-iata") },
+        { value: "ICAO", name: i18n.messages("table-category-icao") },
+    ];
+});
+
 function categoryName(v: string) {
-    return i18n.region(v);
+    switch (currentSort.value) {
+        case "region":
+            return i18n.region(v);
+        case "type":
+            return i18n.types(v);
+        case "IATA":
+            return v;
+        case "ICAO":
+            return v;
+    }
 }
 
-onMounted(() => {
-    // Sort by the region, then from the north to south
-    aerodromesSorted.value.sort((a, b) => {
-        if (a.region === b.region) {
-            return b.latitude - a.latitude;
-        } else {
-            const regionIndexA = RegionOrder.indexOf(a.region);
-            const regionIndexB = RegionOrder.indexOf(b.region);
+function matchCategory(r: AerodromesByCategory, a: Aerodrome, sortBy: TableSortCategory) {
+    switch (sortBy) {
+        case "region":
+            return a.region === r.value;
+        case "type":
+            return a.types === r.value;
+        case "IATA":
+            return (a.IATA == null && r.value === "-") || (a.IATA != null && a.IATA[0] === r.value);
+        case "ICAO":
+            return a.code.startsWith(r.value);
+    }
+}
 
-            return regionIndexA - regionIndexB;
-        }
-    });
+const AlphabeticalOrder = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "-",
+];
+
+const ICAOOrder = [...AlphabeticalOrder.map((a) => "RJ" + a), ...AlphabeticalOrder.map((a) => "RO" + a)];
+
+const rows = computed<AerodromeRow[]>(() => {
+    if (currentSort.value === "region" || currentSort.value === "type") {
+        aerodromesSorted.value.sort((a, b) => {
+            if (a.region === b.region) {
+                return b.latitude - a.latitude;
+            } else {
+                const regionIndexA = RegionOrder.indexOf(a.region);
+                const regionIndexB = RegionOrder.indexOf(b.region);
+
+                return regionIndexA - regionIndexB;
+            }
+        });
+    } else if (currentSort.value === "ICAO") {
+        aerodromesSorted.value.sort((a, b) => a.code.localeCompare(b.code));
+    } else {
+        aerodromesSorted.value.sort((a, b) => {
+            if (a.IATA == null && b.IATA == null) {
+                return a.code.localeCompare(b.code);
+            } else if (a.IATA != null && b.IATA != null) {
+                return a.IATA.localeCompare(b.IATA);
+            } else if (a.IATA != null) {
+                return -1;
+            } else {
+                return 1;
+            }
+        });
+    }
 
     const categories: AerodromesByCategory[] = [];
-    for (const r of RegionOrder) {
-        const category: AerodromesByCategory = {
-            value: r,
-            rows: [],
-        };
 
-        categories.push(category);
+    switch (currentSort.value) {
+        case "region":
+            categories.push(...RegionOrder.map((r) => ({ value: r, rows: [] })));
+            break;
+        case "type":
+            categories.push(...TypeOrder.map((r) => ({ value: r, rows: [] })));
+            break;
+        case "IATA":
+            categories.push(...AlphabeticalOrder.map((r) => ({ value: r, rows: [] })));
+            break;
+        case "ICAO":
+            categories.push(...ICAOOrder.map((r) => ({ value: r, rows: [] })));
+            break;
     }
 
     for (const a of aerodromesSorted.value) {
-        const c = categories.find((r) => a.region === r.value);
+        const c = categories.find((r) => matchCategory(r, a, currentSort.value));
         if (c == null) {
             continue;
         }
@@ -121,15 +214,33 @@ onMounted(() => {
         }
     }
 
+    const rows: AerodromeRow[] = [];
     for (const c of categories) {
-        rows.value.push({
+        if (c.rows.length === 0) {
+            continue;
+        }
+        rows.push({
             header: true,
             value: c.value,
         });
-        rows.value.push(...c.rows);
+        rows.push(...c.rows);
     }
 
-    console.log(rows.value);
+    return rows;
+});
+
+onMounted(() => {
+    // Sort by the region, then from the north to south
+    aerodromesSorted.value.sort((a, b) => {
+        if (a.region === b.region) {
+            return b.latitude - a.latitude;
+        } else {
+            const regionIndexA = RegionOrder.indexOf(a.region);
+            const regionIndexB = RegionOrder.indexOf(b.region);
+
+            return regionIndexA - regionIndexB;
+        }
+    });
 });
 </script>
 
