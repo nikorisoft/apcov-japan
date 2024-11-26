@@ -40,7 +40,7 @@ import { usePreference } from "./pref";
 import { computed } from "vue";
 
 const releaseName = "Amposta";
-const additionalVersion = "beta";
+const additionalVersion = "RC";
 
 const score = useScore();
 const pref = usePreference();

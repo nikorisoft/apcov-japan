@@ -38,7 +38,6 @@ export const LanguageOptions: LanguageOption[] = [
 ];
 export const LANGUAGES = LanguageOptions.map((o) => o.value);
 
-const LANG = "ja_JP";
 const FALLBACK_LANG = "en_US";
 
 const ERROR_STRING = "???";
