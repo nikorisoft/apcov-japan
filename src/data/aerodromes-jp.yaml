@@ -921,8 +921,9 @@ aerodromes:
       scheduled: yes
       region: Chugoku
   RJKB:
-    name: Okierabu
+    name: Okinoerabu
     native: 沖永良部空港
+    IATA: OKE
     coordinates:
       - 272554N
       - 1284220E
