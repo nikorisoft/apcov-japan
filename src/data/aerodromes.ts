@@ -13,6 +13,7 @@ type AerodromeYaml = {
 };
 
 type MasterYaml = {
+    revision: number;
     aerodromes: { [code: string]: AerodromeYaml };
     categories: {
         types: string[];
@@ -93,10 +94,18 @@ export class Aerodrome {
     }
 }
 
+let revision: number;
 const masterData: Aerodrome[] = [];
 
 export function getAerodromes() {
     return masterData;
+}
+
+export function getRevision() {
+    if (revision == null) {
+        return 0;
+    }
+    return revision;
 }
 
 export function initAerodromes(data: MasterYaml) {
@@ -114,4 +123,6 @@ export function initAerodromes(data: MasterYaml) {
     for (const typeName of data.categories.types) {
         TypeOrder.push(typeName);
     }
+
+    revision = data.revision;
 }

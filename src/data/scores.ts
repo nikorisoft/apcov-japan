@@ -1,4 +1,5 @@
-import { Aerodrome, getAerodromes } from "./aerodromes";
+import { Aerodrome, getAerodromes, getRevision } from "./aerodromes";
+import { migrateData } from "./migration";
 import { defineStore } from "pinia";
 import { computed, reactive, ref } from "vue";
 
@@ -36,6 +37,7 @@ export type Score = ScoreLevel1 | ScoreLevel2 | ScoreLevel3;
 export interface ScoreSerializableObject {
     level: number;
     scores: Record<string, Score>;
+    revision?: number;
     variants: {
         includeAllAirports: boolean;
     };
@@ -169,7 +171,7 @@ export const useScore = defineStore("score", () => {
                             s3.arrivedPerRunway[rw] = { value: false };
                         }
                         if (s3.departedPerRunway[rw] == null) {
-                            s3.arrivedPerRunway[rw] = { value: false };
+                            s3.departedPerRunway[rw] = { value: false };
                         }
                     }
                 }
@@ -300,6 +302,11 @@ export const useScore = defineStore("score", () => {
                 return false;
             }
 
+            try {
+                migrateData(obj, getRevision());
+            } catch (e) {
+                // Ignore and try to proceed
+            }
             setScore(obj.level, obj.scores, obj.variants);
 
             return true;
