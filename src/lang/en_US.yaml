@@ -77,3 +77,7 @@ messages:
   ICAO: ICAO
 
   point-unit: pt
+
+  legend-level1: Used
+  legend-level2: Departed and arrived
+  legend-level3: Used all runways for takeoff and landing

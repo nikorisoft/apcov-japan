@@ -34,6 +34,16 @@
                                 label
                                     input(type="checkbox", v-model="score.score[a.code].arrivedPerRunway[rw].value").uk-checkbox
                                     | &nbsp;{{ i18n.messages("landed") }}
+    .legend(uk-grid)
+        .col.uk-flex.uk-flex-middle
+            .airport-marker.airport-level-1
+            div : {{ i18n.messages("legend-level1") }}
+        .col.uk-flex.uk-flex-middle
+            .airport-marker.airport-level-2
+            div : {{ i18n.messages("legend-level2") }}
+        .col.uk-flex.uk-flex-middle
+            .airport-marker.airport-level-3
+            div : {{ i18n.messages("legend-level3") }}
 </template>
 
 <script setup lang="ts">

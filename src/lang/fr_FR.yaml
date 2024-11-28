@@ -77,3 +77,7 @@ messages:
   ICAO: OACI
 
   point-unit: pt
+
+  legend-level1: Utilisé
+  legend-level2: Départ et arrivée
+  legend-level3: Utilisé toutes les pistes pour décollage et atterrissage

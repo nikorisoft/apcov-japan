@@ -77,3 +77,7 @@ messages:
   ICAO: ICAO
 
   point-unit: 点
+
+  legend-level1: 利用済み
+  legend-level2: 出発・到着済み
+  legend-level3: 全滑走路で離陸・着陸済み
