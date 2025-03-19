@@ -1,4 +1,4 @@
-revision: 0
+revision: 1
 categories:
   types:
     - hub
@@ -166,8 +166,10 @@ aerodromes:
       - 333504N
       - 1302706E
     runways:
-      - "16"
-      - "34"
+      - "16L"
+      - "34R"
+      - "16R"
+      - "34L"
     categories:
       types: hub
       scheduled: yes

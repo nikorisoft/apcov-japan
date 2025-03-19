@@ -28,7 +28,7 @@
     router-view
 
   .footer
-    p.uk-text-small.uk-text-muted.uk-text-right Airport Coverage Manager (Release {{ releaseName }}{{ additionalVersion != null ? ` (${additionalVersion})` : "" }}) &copy; nikorisoft 2024.
+    p.uk-text-small.uk-text-muted.uk-text-right Airport Coverage Manager (Release {{ releaseName }}{{ additionalVersion != null ? ` (${additionalVersion})` : "" }}) &copy; nikorisoft 2024-2025.
 </template>
 
 <script setup lang="ts">
